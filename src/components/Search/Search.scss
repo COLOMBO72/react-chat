@@ -1,0 +1,32 @@
+@import '../../styles/colors';
+@import '../../styles/mixins';
+
+.search__wrapper{
+  display: flex;
+  margin: 10px;
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  border-bottom: 1px solid black;
+  input{
+    padding: 10px 30px;
+    border-radius: 5px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border: none;
+  }
+  img{
+    width: 28px;
+    position: absolute;
+  }
+  .icon_close{
+    right: 0;
+    top: 5px;
+    @include opacityAnim;
+  }
+  .icon_search{
+    left: 0;
+    top: 5px;
+  }
+}

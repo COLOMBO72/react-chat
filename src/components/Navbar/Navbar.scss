@@ -1,0 +1,58 @@
+@import '../../styles/colors';
+@import '../../styles/mixins';
+
+.navbar__wrapper{
+  display: flex;
+  align-items: center;
+  width: 20%;
+  max-width: 200px;
+  flex-direction: column;
+  background-color: $navbar-color;
+  .navbar-profile-info{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 7px;
+    @include hoverAnim;
+    .navbar-avatar{
+      padding: 10px;
+      cursor: pointer;
+      width: 50px;
+      border-radius: 100%;
+    }
+    div{
+      display: flex;
+      flex-direction: column;
+      span{
+        cursor: pointer;
+      }
+    }
+  }
+  .navbar__links{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    a{
+      height: 70px;
+      text-decoration: none;
+      gap: 10px;
+      font-weight: 700;
+      color: black;
+      @include F_R_C_C;
+      @include hoverAnim;
+    }
+    div{
+      height: 70px;
+      @include F_R_C_C;
+      text-decoration: none;
+      color: black;
+      div{
+        width: 50px;
+        height: 25px;
+        background-color: white;
+        border-radius: 10px;
+        margin: 10px;
+      }
+    }
+  }
+}

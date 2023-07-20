@@ -1,0 +1,96 @@
+@mixin F_R_C_C {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@mixin F_C_C_C {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@mixin F_C_SB_C {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin F_R_SB_C {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin wj_F_R_C {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@mixin wj_F_C_C {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@mixin wj_F_C_C {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@mixin wj_F_R_C {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@mixin wa_F_R_C {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+@mixin wa_F_C_C {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@mixin wa_F_C_SB {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@mixin wa_F_R_SB {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@mixin mq($size) {
+  @media only screen and (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin opacityAnim {
+  opacity: 0.5;
+  transition: 0.2s;
+  cursor:pointer;
+  &:hover {
+    opacity: 1;
+    transition: 0.2s;
+  }
+}
+@mixin hoverAnim {
+  transition: 0.2s ease-in;
+  cursor:pointer;
+  &:hover{
+    background-color: rgb(244, 255, 252);
+  }
+}
+@mixin transformAnim {
+  transform: scale(1);
+  transition: 0.2s;
+  cursor:pointer;
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+  }
+}
