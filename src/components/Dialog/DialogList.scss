@@ -1,0 +1,54 @@
+@import '../../styles/colors';
+@import '../../styles/mixins';
+
+.dialogs-list__wrapper{
+  @include wj_F_C_C;
+  width: 30%;
+  background-image: url("../../../public/balloon-large.png");
+  background-position: center; 
+  object-fit: cover;
+  background-repeat: no-repeat; 
+  background-size: cover;
+  min-height: 100%;
+  .dialogs_list{
+    display: flex;
+    width: 90%;
+    max-height: 700px;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+    flex-direction: column;
+    .dialog__wrapper{
+      @include F_R_SB_C;
+      position: relative;
+      cursor: pointer;
+      background-color: rgba(243, 243, 243, 0.836);
+      padding: 10px;
+      border-radius: 10px;
+      margin: 5px 0px;
+      .avatar{
+        border-radius: 100%;
+      }
+      .dialog_user_info{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+      }
+      div{
+        @include wa_F_C_SB;
+      }
+      .dialog__time{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+      }
+      .icon-close{
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        @include opacityAnim;
+      }
+    }
+  }
+}
