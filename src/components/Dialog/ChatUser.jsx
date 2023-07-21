@@ -1,33 +1,33 @@
 import React from 'react';
 import './ChatUser.scss';
+import Message from './Message';
+import { useNavigate, useParams } from 'react-router-dom';
+import FatalPage from '../FatalPage/FatalPage';
 
-const ChatUser = () => {
+const ChatUser = ({id}) => {
+  const params = useParams();
+  const navigate = useNavigate();
+  function closeDialog() {
+    navigate('/');
+  }
+  if (!params.id){
+    return <FatalPage/>
+  }
   return (
     <div className="chat-user__wrapper">
       <div className="chat-user__header">
         <img src="avatar.jpg" width={40} alt="" />
         <span>James Franco</span>
-        <img className="icon-close" src="icon-close.png" width={30} alt="" />
+        <img
+          onClick={() => closeDialog()}
+          className="icon-close"
+          src="icon-close.png"
+          width={30}
+          alt=""
+        />
       </div>
       <div className="chat-user__dialog">
-        <div className="chat-user-message_own">
-          <span className="message">
-            <div>
-              <span>james</span> <span>12:48</span>
-            </div>
-            w
-          </span>
-          <img src="avatar.jpg" width={40} alt="" />
-        </div>
-        <div className="chat-user-message_user">
-          <img src="avatar.jpg" width={40} alt="" />
-          <span className="message">
-            <div>
-              <span>james</span> <span>12:48</span>
-            </div>
-            apdkhawuiodadawdhaowjdawdhoawhdoadhaapdkhawuiodadawdhaowjdawdhoawhdoadhaapdkhawuiodadawdhaowjdawdhoawhdoadha
-          </span>
-        </div>
+        <Message />
       </div>
       <div className="chat-user__manage">
         <input type="text" />

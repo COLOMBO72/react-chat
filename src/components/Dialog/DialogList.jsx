@@ -1,28 +1,13 @@
 import React from 'react';
 import './DialogList.scss';
+import { useNavigate } from 'react-router-dom';
 
-const DialogList = () => {
-  const users = [
-    { id: 1, name: 'Jack Yellow', photo: 'avatar.jpg', lastmessage: 'hello', time: '12:48' },
-    {
-      id: 2,
-      name: 'John Blue',
-      photo: 'avatar.jpg',
-      lastmessage: 'dawdawdawdawdawdawda',
-      time: '18:48',
-    },
-    {
-      id: 3,
-      name: 'Brad Bold',
-      photo: 'avatar.jpg',
-      lastmessage: 'lol dudas hello hwru whru',
-      time: '20:01',
-    },
-  ];
+const DialogList = ({users}) => {
+  const navigate = useNavigate();
   return (
     <div className="dialogs_list">
       {users.map((user) => (
-        <div className="dialog__wrapper">
+        <div onClick={()=>navigate(`/${user.id}`)} className="dialog__wrapper">
           <div className="dialog_user_info">
             <img className="avatar" src={user.photo} alt="" width={60} />
             <div>
