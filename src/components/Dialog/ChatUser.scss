@@ -38,18 +38,31 @@
     padding-bottom: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    &::-webkit-scrollbar {
+      width: 0;
+    }
     .chat-user-message_own{
-      margin-right: 10px;
       display: flex;
-      align-items: center;
+      margin-right: 10px;
+      align-items: flex-end;
       gap: 10px;
       margin-left: auto;
-      span{
+      word-wrap: break-word;
+      max-width: 60%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      .message{
         background-color: $navbar-color;
         padding: 10px;
         border-radius: 10px 10px 0px 10px;
-        max-width: 80%;
+        max-width: 85%;
+        div{
+          display: flex;
+          justify-content: space-between;
+          color: rgba(151, 151, 151, 0.726);
+          margin-bottom: 5px;
+          gap: 10px;
+        }
       }
       img{
         border-radius: 100%;
@@ -58,14 +71,23 @@
     .chat-user-message_user{
       margin-left: 10px;
       display: flex;
-      align-items: center;
+      align-items: flex-end;
+      word-wrap: break-word;
       gap: 10px;
       margin-right: auto;
-      span{
+      max-width: 60%;
+      .message{
         background-color: rgb(163, 218, 255);
         padding: 10px;
         border-radius: 10px 10px 10px 0px;
         max-width: 80%;
+        div{
+          display: flex;
+          gap: 10px;
+          justify-content: space-between;
+          color: rgba(151, 151, 151, 0.726);
+          margin-bottom: 5px;
+        }
       }
       img{
         border-radius: 100%;

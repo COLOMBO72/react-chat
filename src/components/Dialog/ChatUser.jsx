@@ -11,116 +11,22 @@ const ChatUser = () => {
       </div>
       <div className="chat-user__dialog">
         <div className="chat-user-message_own">
-          <span>Its me</span>
+          <span className="message">
+            <div>
+              <span>james</span> <span>12:48</span>
+            </div>
+            w
+          </span>
           <img src="avatar.jpg" width={40} alt="" />
         </div>
         <div className="chat-user-message_user">
           <img src="avatar.jpg" width={40} alt="" />
-          <span>Im other</span>
-        </div>
-        <div className="chat-user-message_own">
-          <span>Its me</span>
-          <img src="avatar.jpg" width={40} alt="" />
-        </div>
-        <div className="chat-user-message_user">
-          <img src="avatar.jpg" width={40} alt="" />
-          <span>Im other</span>
-        </div>
-        <div className="chat-user-message_own">
-          <span>Its me</span>
-          <img src="avatar.jpg" width={40} alt="" />
-        </div>
-        <div className="chat-user-message_user">
-          <img src="avatar.jpg" width={40} alt="" />
-          <span>Im other</span>
-        </div>
-        <div className="chat-user-message_own">
-          <span>Its me</span>
-          <img src="avatar.jpg" width={40} alt="" />
-        </div>
-        <div className="chat-user-message_user">
-          <img src="avatar.jpg" width={40} alt="" />
-          <span>Im other</span>
-        </div>
-        <div className="chat-user-message_own">
-          <span>Its me</span>
-          <img src="avatar.jpg" width={40} alt="" />
-        </div>
-        <div className="chat-user-message_user">
-          <img src="avatar.jpg" width={40} alt="" />
-          <span>Im other</span>
-        </div>
-        <div className="chat-user-message_own">
-          <span>Its me</span>
-          <img src="avatar.jpg" width={40} alt="" />
-        </div>
-        <div className="chat-user-message_user">
-          <img src="avatar.jpg" width={40} alt="" />
-          <span>Im other</span>
-        </div>
-        <div className="chat-user-message_own">
-          <span>Its me</span>
-          <img src="avatar.jpg" width={40} alt="" />
-        </div>
-        <div className="chat-user-message_user">
-          <img src="avatar.jpg" width={40} alt="" />
-          <span>Im other</span>
-        </div>
-        <div className="chat-user-message_own">
-          <span>Its me</span>
-          <img src="avatar.jpg" width={40} alt="" />
-        </div>
-        <div className="chat-user-message_user">
-          <img src="avatar.jpg" width={40} alt="" />
-          <span>Im other</span>
-        </div>
-        <div className="chat-user-message_own">
-          <span>Its me</span>
-          <img src="avatar.jpg" width={40} alt="" />
-        </div>
-        <div className="chat-user-message_user">
-          <img src="avatar.jpg" width={40} alt="" />
-          <span>Im other</span>
-        </div>
-        <div className="chat-user-message_own">
-          <span>Its me</span>
-          <img src="avatar.jpg" width={40} alt="" />
-        </div>
-        <div className="chat-user-message_user">
-          <img src="avatar.jpg" width={40} alt="" />
-          <span>Im other</span>
-        </div>
-        <div className="chat-user-message_own">
-          <span>Its me</span>
-          <img src="avatar.jpg" width={40} alt="" />
-        </div>
-        <div className="chat-user-message_user">
-          <img src="avatar.jpg" width={40} alt="" />
-          <span>Im other</span>
-        </div>
-        <div className="chat-user-message_own">
-          <span>Its me</span>
-          <img src="avatar.jpg" width={40} alt="" />
-        </div>
-        <div className="chat-user-message_user">
-          <img src="avatar.jpg" width={40} alt="" />
-          <span>Im other</span>
-        </div>
-        <div className="chat-user-message_own">
-          <span>Its me</span>
-          <img src="avatar.jpg" width={40} alt="" />
-        </div>
-        <div className="chat-user-message_user">
-          <img src="avatar.jpg" width={40} alt="" />
-          <span>Im other</span>
-        </div>
-        <div className="chat-user-message_own">
-          <span>Its me</span>
-          <img src="avatar.jpg" width={40} alt="" />
-        </div>
-        <div className="chat-user-message_user">
-          <img src="avatar.jpg" width={40} alt="" />
-          <span>Im other</span>
+          <span className="message">
+            <div>
+              <span>james</span> <span>12:48</span>
+            </div>
+            apdkhawuiodadawdhaowjdawdhoawhdoadhaapdkhawuiodadawdhaowjdawdhoawhdoadhaapdkhawuiodadawdhaowjdawdhoawhdoadha
+          </span>
         </div>
       </div>
       <div className="chat-user__manage">
