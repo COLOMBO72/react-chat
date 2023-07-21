@@ -1,5 +1,5 @@
-@import '../styles/colors';
-@import '../styles/mixins';
+@import '../../styles/colors';
+@import '../../styles/mixins';
 
 .chat__wrapper{
   min-width: 80%;
@@ -21,7 +21,7 @@
   }
   .right-chat{
     width: 50%;
-    background-image: url('../../public/animals-large.gif');
+    background-image: url('../../../public/animals-large.gif');
     object-fit: cover;
     background-color: #cccccc; 
     background-position: center; 

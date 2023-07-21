@@ -1,9 +1,14 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom';
 import './App.scss';
-import Navbar from './components/Navbar/Navbar';
-import Chat from './folder/Chat';
+import Chat from './folder/Chat/Chat';
+import React from 'react';
+import Login from './folder/Authorization/Login';
 
 function App() {
+  const [loged, setLoged] = React.useState(true);
+  if (!loged) {
+    return <Login />;
+  }
   return (
     <BrowserRouter>
       <div className="app">

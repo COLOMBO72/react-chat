@@ -1,9 +1,9 @@
 import React from 'react';
 import './Chat.scss';
-import Navbar from '../components/Navbar/Navbar';
-import Search from '../components/Search/Search';
-import ChatUser from '../components/Dialog/ChatUser';
-import DialogList from '../components/Dialog/DialogList';
+import Navbar from '../../components/Navbar/Navbar';
+import Search from '../../components/Search/Search';
+import ChatUser from '../../components/Dialog/ChatUser';
+import DialogList from '../../components/Dialog/DialogList';
 import { useParams } from 'react-router-dom';
 
 const Chat = () => {
